@@ -1,9 +1,15 @@
 # Customer-Churn-SageMaker
+Build, tune, and deploy an end-to-end churn prediction model using Amazon SageMaker Pipelines.
+
+The ability to predict that a particular customer is at a high risk of churning, while there is still time to do something about it, represents a huge additional potential revenue source for every online business. Depending on the industry and business objective, the problem statement can be multi-layered. 
 
 ## Description
 Customer Churn Model to predict if a customer would be retained or not.
 1. Store Retail Dataset (https://www.kaggle.com/uttamp/store-data)
 2. Binary Classification Model using the SageMaker XGBoost Framework
+
+## DataSet
+
 
 ## Run Code:
 1. As an initial step, run through Create_Upload_Datasets_to_S3.ipynb notebook to generate and upload the required datasets to S3 Scratchpad Space.
@@ -23,3 +29,9 @@ Customer Churn Model to predict if a customer would be retained or not.
 7. ChurnTransform (SageMaker Transform Step)- Applies Batch Transform on the given dataset by using the model created in the previous step
 8. ChurnModelConfigFile (SageMaker Processing Step)- Creates the config file which includes information as to which columns to check bias on, baseline values for generating SHAPley plots etc..
 9. ClarifyProcessing Step (SageMaker Processing Step)- Applies SageMaker Clarify using the config file created in the previous step to generate Model Explainability, Bias Information reports.
+
+## Security
+See CONTRIBUTING for more information.
+
+## License
+This library is licensed under the MIT-0 License. See the LICENSE file.
