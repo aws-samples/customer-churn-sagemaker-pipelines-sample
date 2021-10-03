@@ -9,7 +9,7 @@ Customer Churn Model to predict if a customer would be retained or not.
 2. Binary Classification Model using the SageMaker XGBoost Framework
 
 ## DataSet
-![plot](img/DataSet.png)
+![plot](img/dataset.png)
 
 ## Run Code:
 1. As an initial step, run through Create_Upload_Datasets_to_S3.ipynb notebook to generate and upload the required datasets to S3 Scratchpad Space.
