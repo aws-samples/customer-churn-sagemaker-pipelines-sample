@@ -14,7 +14,7 @@ Customer Churn Model to predict if a customer would be retained or not.
 ![plot](img/dataset.png)
 
 ## Run Code:
-1. Download and save the Store Retail Dataset (https://www.kaggle.com/uttamp/store-data) in the default Amazon Simple Storage Service (Amazon S3) bucket associated with your SageMaker session, and in the S3 bucket of your choice.
+1. Download and save the Store Retail Dataset (https://www.kaggle.com/uttamp/store-data) in the default Amazon Simple Storage Service (Amazon S3) bucket associated with your SageMaker session or in the S3 bucket of your choice. Also, create a folder "data" within the repo and save the dataset in this folder.
 2. The Customer_Churn_Modeling.ipynb can be used to run through each step of the model development in an interactive way.
 3. SageMaker_Pipelines_Project.ipynb is to launch the SM Pipeline which would orchestrate each step of the model from preprocessing through creating model, running predictions etc..
 
